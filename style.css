@@ -1,28 +1,66 @@
+body{
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    margin: 500px 0 0 0;
+    background-color: rgb(255, 104, 165);
+}
 /*
 =================================================
 SEARCH
 =================================================
 */
+.search{
+    height:72px;
+    display: block;
+    width:100%;
+}
 form{
     width:100%;
     max-width:600px;
     margin:0 auto;
+    min-height:72px;
+    display:block;
  }
  input{
     width:100%;
     font-size:32px;
     margin:5px 0;
     float:left;
-    border:none;
+    border:1px solid #ccc;
     padding:10px;
     outline:none;
  }
  .search-bar{
-    width:85%;
+    width:60%;
  }
  .submit-button{
-    width:15%;
-    background:#000;
-    color:#FFF;
+    width:90px;
+    background:#ff83c3fb;
+    color:#fffafd;
+    margin-left: 5px;
+    border-radius: 10px;
  }
+ /*
+ =================================================
+ BOOKMARKS
+ =================================================
+ */
+ .bookmarks{
+    padding:30px;
+    clear:both;
+    width:100%;
+    display:block;
+ }
+ .bookmarks i{
+    font-size:42px;
+    margin:0 20px;
+    color: #ffbee4;
+    vertical-align: top;
+ }
+ .bookmarks i:hover{
+    font-size:72px;
+    position:relative;
+ }
+ 
  
