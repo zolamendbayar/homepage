@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <h1>Hola Zola!</h1>
+    <h1>HOLA ZOLA!</h1>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Home Page</title>
@@ -9,9 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <script src="myScripts.js"></script>
 </head>
 <body>
-
+    <a class="weatherwidget-io" href="https://forecast7.com/en/42d07n87d79/glenview/" data-label_1="GLENVIEW" data-label_2="WEATHER" data-icons="Climacons Animated" data-theme="original" data-basecolor="#ff68a5" data-shadow="#ff71b4" data-highcolor="#ffbfbf" data-suncolor="#ffc64c" data-mooncolor="#e0e5ff" data-cloudcolor="#cce6ff" data-cloudfill="#b6e1ff" data-raincolor="#0069ff" >GLENVIEW WEATHER</a>
+    <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    </script>
     <section class="search">
         <!-- GOOGLE SEARCH -->
         <form action="https://google.com/search" method="get" target="_blank">
@@ -26,19 +30,17 @@
     <section class="bookmarks">
         <a href="https://mail.google.com" target="_blank">
             <i class="far fa-envelope"></i>
-            <i class="fa-brands fa-instagram"></i>
-        </a>
-    </section>
+            </a>
+            <a href="https://www.instagram.com/zola.mendbayar/" target="_blank">
+                <i class="fab fa-instagram"></i>
+             </a>
+    </section>  
+    <!-- POST IT NOTE (IN HTML) -->
+<textarea placeholder="Write a note..." id="note" onkeyup="autoSave()"></textarea>
 
-
-
-
-
-
-    <!--[if lt IE 7]>
-        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    
-    <script src="myScripts.js" async defer></script>
 </body>
+<body onload="startTime()">
+
+    <div id="clock"></div>
+    
 </html>
