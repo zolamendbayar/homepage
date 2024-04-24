@@ -3,7 +3,7 @@ body{
     text-align: center;
     height: 100vh;
     margin: 500px 0 0 0;
-    background-color: rgb(255, 104, 165);
+    background-color: #ff68a5;
 }
 h1{
    
@@ -65,7 +65,7 @@ form{
  */
  .bookmarks{
     padding:30px;
-    clear:both;s
+    clear:both;
     width:100%;
     display:block;
  }
