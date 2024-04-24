@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <h1>HOLA ZOLA!</h1>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Home Page</title>
@@ -11,11 +11,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <script src="myScripts.js"></script>
 </head>
+    
 <body>
     <a class="weatherwidget-io" href="https://forecast7.com/en/42d07n87d79/glenview/" data-label_1="GLENVIEW" data-label_2="WEATHER" data-icons="Climacons Animated" data-theme="original" data-basecolor="#ff68a5" data-shadow="#ff71b4" data-highcolor="#ffbfbf" data-suncolor="#ffc64c" data-mooncolor="#e0e5ff" data-cloudcolor="#cce6ff" data-cloudfill="#b6e1ff" data-raincolor="#0069ff" >GLENVIEW WEATHER</a>
     <script>
     !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
     </script>
+
+    <h1>HOLA ZOLA!</h1>
+
     <section class="search">
         <!-- GOOGLE SEARCH -->
         <form action="https://google.com/search" method="get" target="_blank">
@@ -24,6 +28,8 @@
             <input type="submit" value="GO" class="submit-button">
         </form> 
     </section>
+   
+
 
 
     <!-- BOOKMARKS -->
@@ -34,7 +40,15 @@
             <a href="https://www.instagram.com/zola.mendbayar/" target="_blank">
                 <i class="fab fa-instagram"></i>
              </a>
-    </section>  
+             <a href="https://www.youtube.com/" target="_blank">
+                <i class="fab fa-youtube"></i>
+             </a>
+             <i class="fas fa-sticky-note" onclick="showNote()"></i>
+             <i class="fas fa-calculator" onclick="showCalculator()"></i>
+            </section>   
+            <!-- CALCULATOR -->
+            <iframe width="219" height="302" id="calc"
+            src="http://calculator-1.com/outdoor/?f=ff3bae&r=ffcaea" scrolling="no" frameborder="0"></iframe>
     <!-- POST IT NOTE (IN HTML) -->
 <textarea placeholder="Write a note..." id="note" onkeyup="autoSave()"></textarea>
 
@@ -42,5 +56,4 @@
 <body onload="startTime()">
 
     <div id="clock"></div>
-    
 </html>
