@@ -1,3 +1,4 @@
+
 body{
     justify-content: center;
     text-align: center;
@@ -6,10 +7,10 @@ body{
     background-color: #ff68a5;
 }
 h1{
-   
+   color:#fbc6e0;
    font-variant: initial;
    font-weight:900;
-   font-size: 100px;
+   font-size: 120px;
    text-align: center;
    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    margin-bottom: 0;
@@ -17,6 +18,7 @@ h1{
    animation: myanim 3s infinite;
    padding-top:270px;
  }
+ 
  @keyframes myanim {
    50% {
      text-shadow: 10px -10px 0px #eb3cab, 20px -20px 0px #e73076, 30px -30px 0px #ff00c3;
@@ -68,7 +70,7 @@ form{
  .bookmarks{
     padding:30px;
     clear:both;
-    width:90%;
+    width:97%;
     display:block;
  }
  .bookmarks a{
@@ -133,7 +135,6 @@ POST-IT NOTE (IN CSS)
    margin:0 15px;
    }
 }
-
 
  
  
